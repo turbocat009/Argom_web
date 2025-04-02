@@ -1,0 +1,24 @@
+@import url(./header.css);
+@import url(./info.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #333;
+}
+
+button{
+    height: 2rem;
+    width: 4rem;
+    border-radius: 16px;
+    box-shadow: none;
+}
+
