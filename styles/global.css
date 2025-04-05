@@ -20,3 +20,8 @@ button{
     box-shadow: none;
 }
 
+p{
+    margin: 0px;
+    text-align: center;
+}
+
