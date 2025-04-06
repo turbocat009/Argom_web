@@ -1,0 +1,62 @@
+@import url(./header.css);
+@import url(./info.css);
+@import url(./footer.css);
+@import url(./dialog.css);
+@import url(./aside.css);
+@import url(./mobile/header.css);
+@import url(./mobile/aside.css);
+@import url(./mobile/footer.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    height: 100vh;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: #333;
+    margin: 0px;
+    padding: 0px;
+}
+
+button{
+    min-height: 32px;
+    border-radius: 16px;
+    border: none;
+    box-shadow: none;
+    margin: 10px;
+}
+
+p{
+    margin: 0px;
+    text-align: center;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    gap: 5px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 16px;
+    margin: 10px;
+}
+
+.none {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-row {
+    flex-direction: row;
+}

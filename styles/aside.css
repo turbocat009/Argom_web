@@ -1,0 +1,21 @@
+@media(min-width: 769px) {
+    section {
+        display: grid;
+        grid-template-columns: 256px 1fr;
+        gap: 1rem;
+        padding-left: 40px;
+    }
+    
+    section ul li {
+        list-style: none;
+        padding: 0.5rem 0;
+        gap: 24px;
+    }
+    
+    section ul li a {
+        text-decoration: none;
+        color: var(--color-text);
+        font-size: 15px;
+        line-height: 23px;
+    }
+}
