@@ -70,7 +70,6 @@
     }
 
     .MenuButton{
-        flex-direction: column;
         width: 64px;
         height: 32px;
         background-color: var(--color-secondary);
