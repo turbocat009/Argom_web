@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const openNota = document.getElementById("OpenNota");
     const openMap = document.getElementById("OpenMap");
     const openCookies = document.getElementById("OpenCookies");
-    const openLogin = document.getElementById("Login");
+    const openLogin = document.getElementById("login");
     const closeNote = document.getElementById("closeNote");
     const closeMap = document.getElementById("closeMap");
     const closeCookies = document.getElementById("closeCookies");
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     closeCookies.addEventListener("click", () => {
         CookiesDialog.close();
     });
-    loginDialog.addEventListener("click", () => {
+    openLogin.addEventListener("click", () => {
         LoginDialog.showModal();
     });
     closeLogin.addEventListener("click", () => {
