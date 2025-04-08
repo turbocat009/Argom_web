@@ -1,12 +1,13 @@
-@media(max-width: 768px) {
+@media (max-width: 1024px) and (min-width: 768px) {
     main{
         display: grid;
         grid-template-columns: 1fr; 
-        justify-content: start;
+        justify-content: center;
         align-items: center;
         gap: 20px;
         margin: 10px;
         top: 150px;
+        min-width: 500px;
     }
 
     main a{
@@ -15,8 +16,10 @@
         border-radius: 8px;
         text-decoration: none;
         text-align: center;
+        justify-self: center;
         padding: 5px;
         padding-top: 5px;
+        width: 300px;
     }
 
     main a:hover{
