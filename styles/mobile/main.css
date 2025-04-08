@@ -1,11 +1,12 @@
-@media(min-width: 769px) {
+@media(max-width: 768px) {
     main{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-columns: 1fr; 
         justify-content: start;
         align-items: center;
         gap: 20px;
         margin: 10px;
+        top: 150px;
     }
 
     main a{
@@ -14,19 +15,32 @@
         border-radius: 8px;
         text-decoration: none;
         text-align: center;
-        font-weight: 400;
+        padding: 5px;
+        padding-top: 5px;
+    }
+
+    main a:hover{
+        background-color: #e6e6e6c2;
+        color: var(--color-text);
+        border-radius: 8px;
+        text-decoration: none;
+        text-align: center;
         padding: 5px;
         padding-top: 5px;
     }
 
     main a h5{
-        font-size: 32px;
+        font-size: 18px;
         margin: 10px;
         font-weight: 400;
     }
 
-    .productIMG{
-        object-fit: cover;
+
+
+    .productIMG {
+        margin-top: 10px;
+        height: 250px;
+        width: 250px;
         border-radius: 8px;
     }
 }
