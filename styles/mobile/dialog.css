@@ -1,0 +1,42 @@
+@media (max-width: 768px) {
+    dialog {
+        background-color: #FFF;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        margin: auto;
+        max-width: 250px;
+    }
+    
+    dialog::backdrop {
+        background-color: rgba(79, 78, 78, 0.39);
+        backdrop-filter: blur(5px);
+    }
+    
+    dialog button {
+        background-color: #E6E6E680;
+        color: #111;
+        padding: 10px 20px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    dialog button:hover {
+        background-color:rgb(211, 210, 210);
+        color: #111;
+        padding: 10px 20px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    dialog img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+}
