@@ -2,4 +2,12 @@
     aside {
         display: none;
     }
+    section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 100px;
+        justify-content: center;
+        align-items: center;
+    }
 }

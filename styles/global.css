@@ -7,7 +7,11 @@
 @import url(./mobile/header.css);
 @import url(./mobile/aside.css);
 @import url(./mobile/footer.css);
+@import url(./mobile/main.css);
+@import url(./mobile/dialog.css);
 @import url(./tablet/aside.css);
+@import url(./tablet/main.css);
+
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
