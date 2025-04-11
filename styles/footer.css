@@ -45,6 +45,32 @@
         border: none;
         cursor: pointer;
     }
+
+    #OpenNota{
+        display: flex;
+        flex-grow: 1;
+        flex-basis: 0;
+        justify-content: end;
+    }
+
+    #OpenCookies{
+        display: flex;
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+
+    #OpenMap{
+        display: flex;
+    }
+
+    .·{
+        display: flex;
+        align-self: baseline;
+        justify-content: center;
+    }
+
+
+
     
     .footerLinks p{
         color: white;
