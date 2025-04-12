@@ -9,8 +9,8 @@
     .footerInfo{
         display: flex;
         justify-content: center;
-        gap: 10rem;
         padding: 1rem;
+        gap: 10rem;
     }
     
     .footerInfo div{

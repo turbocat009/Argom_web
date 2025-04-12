@@ -1,7 +1,7 @@
-@media(min-width: 769px) {
+@media(min-width: 1025px) {
     main{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-columns: 1fr 1fr; 
         justify-content: start;
         align-items: center;
         gap: 20px;
@@ -17,7 +17,7 @@
         font-weight: 400;
         padding: 5px;
         padding-top: 5px;
-        height: 50vh;
+        height: 40vh;
     }
 
     main a:hover{
@@ -36,5 +36,25 @@
         height: 30vh;
         width: 30vh;
         border-radius: 8px;
+    }
+    @media (min-width: 1416px) {
+        main{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+    @media (min-width: 2046px) {
+        main{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+    @media (min-width: 2600px) {
+        main{
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+    }
+    @media (min-width: 3333px) {
+        main{
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
     }
 }
