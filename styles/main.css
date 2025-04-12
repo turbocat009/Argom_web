@@ -17,7 +17,8 @@
         font-weight: 400;
         padding: 5px;
         padding-top: 5px;
-        height: 40vh;
+        height: 45vh;
+        align-content: center;
     }
 
     main a:hover{
