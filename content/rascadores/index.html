@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="/src/scripts/openDialog.js"></script>
+    <script src="/src/scripts/testFetures.js"></script>
+    <script src="/src/scripts/responsive.js"></script>
+    <link rel="shortcut icon" href="/src/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/global.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de compra on-line de la empresa española de retenes Argom Seals S.L.">
+    <meta name="keywords" content="Argom, Juntas, Retenes, Rascadores, O-Ring, Hidraulica, Neumatica,
+    Juntas para, Catalunya, Cataluña, España, Espanya, Spain, Seals, RCM, Juntas a medida, Juntas especiales, Parker, Racord, Brida
+    Maquinaria, Industrial, Sant Quirze ">
+    <meta name="theme-color" content="#323F92" />
+    <meta property="og:title" content="Argom Seals S.L. | Juntas de Estanquidad">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/src/favicon.svg">
+    <meta property="og:url" content="https://argom.biz">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:site_name" content="Argom Seals S.L. | Juntas de Estanquidad">
+    <meta name="twitter:image:alt" content="Logo de Argom">
+    <title>Rascadores | Argom Seals S.L.</title>
+</head>
+
+<body>
+    <header>
+        <a href="https://argom.biz/ca"><img width="220px" height="68px" src="/src/pictures/logo.png"
+                alt="Logo de Argom Seals S.L."></a>
+        <ul class="headerlinks">
+            <div class="ContextMenu MobileOnly none" id="LogedInMenuMobile">
+                <button class="CartButton"><img src="/src/pictures/cart.svg" alt=""></button>
+                <button class="MenuButton" id="Menu"><img src="/src/pictures/menu.svg" alt=""></button>
+                <button class="none" id="MenuC"><img src="/src/pictures/close.svg" alt=""></button>
+            </div>
+            <div class="LogedInMenuClosed none" id="LogedInMenu">
+                <li><a id="user" href="">USERNAME</a></li>
+                <li><a href="">INICIO</a></li>
+                <li><a href="">BUSCAR</a></li>
+                <li><a href="">HISTÓRICO</a></li>
+                <li><a href="">CARRITO (1) </a></li>
+                <li><button id="logout">SALIR</button></li>
+            </div>
+            <button class="" id="login"> ÁREA PRIVADA
+        </ul>
+        </button>
+    </header>
+    <section>
+        <aside>
+            <ul>
+                <li><a href="/content/rascadores/">RASCADORES</a></li>
+                <li><a href="/content/juntasV/">JUNTAS DE VÁSTAGO</a></li>
+                <li><a href="/content/juntasP/">JUNTAS DE PISTÓN</a></li>
+                <li><a href="/content/elementosG/">ELEMENTOS DE GUIADO</a></li>
+                <li><a href="/content/toricas/">TÓRICAS Y AROS DE APOYO</a></li>
+                <li><a href="/content/retenes/">RETENES</a></li>
+                <li><a href="/content/rotativas/">ROTATIVAS</a></li>
+                <li><a href="/content/juntasR/">JUNTAS PARA RACORD Y BRIDA</a></li>
+                <li><a href="/content/cajas/">CAJAS</a></li>
+                <li><a href="/content/rotulas/">RÓTULAS</a></li>
+                <li><a href="/content/fuelles/">FUELLES</a></li>
+                <li><a href="/content/perfiles/">PERFILES Y PLANCHAS</a></li>
+                <li><a href="/content/herramientas/">HERRAMIENTAS</a></li>
+                <li><a href="/content/mecanizaciones/">MECANIZACIONES ESPECIALES</a></li>
+            </ul>
+        </aside>
+        <main class="Object">
+            <h1>RASCADORES</h1>
+            <form>
+                <button>TODOS LOS TIPOS</button>
+                <p>|</p>
+                <ul>
+                    <li><button>CAJERA CERRADA</button></li>
+                    <li><button>CAJERA POR SEGUIR</button></li>
+                    <li><button>CAJERA ABIERTA</button></li>
+                </ul>
+            </form>
+            <form>
+                <input type="number" name="Interior" placeholder="Interior" min="0">
+                <input type="number" name="Exterior" placeholder="Exterior" min="0">
+                <input type="number" name="Altura" placeholder="Altura" min="0">
+
+            </form>
+            <button id="DebugButton">
+                <img class="productIMG" src="/src/favicon.svg" alt="Foto de Mecanizaciones Especiales">
+                <h5>Debug Menu</h5>
+            </button>
+
+        </main>
+    </section>
+    <footer>
+        <div class="footerInfo">
+            <div>
+                <img src="/src/pictures/phone.svg" alt="Icono de teléfono">
+                <p>Teléfono de contacto:</p>
+                <a href="tel:+34937232886"><strong>93 723 28 86</strong></a>
+            </div>
+            <div>
+                <img src="/src/pictures/mail.svg" alt="Icono de email">
+                <p>Email:</p>
+                <a href="mailto:argom@argom.es"><strong>argom@argom.es</strong></a>
+            </div>
+        </div>
+        <div class="footerLinks">
+            <button id="OpenNota">Nota legal</button>
+            <p class="·">·</p>
+            <button id="OpenMap">Mapa web</button>
+            <p class="·">·</p>
+            <button id="OpenCookies">Política de cookies</button>
+        </div>
+        </p>
+    </footer>
+</body>
+
+</html>
+
+<!-- -----------------Dialogs---------------------- -->
+
+
+<dialog class="LegalNote">
+    <h5>Nota legal:</h5>
+    <img src="/src/pictures/legalnote.webp" alt="XD">
+    <button id="closeNote">Cerrar</button>
+</dialog>
+
+<dialog class="MapWeb">
+    <h5>Mapa Web:</h5>
+    <img src="/src/pictures/XD.jpeg" alt="XD">
+    <button id="closeMap">Cerrar</button>
+</dialog>
+
+<dialog class="CookiesDialog">
+    <h5>Política de cookies:</h5>
+    <img src="/src/pictures/cookies.jpg" alt="Nyam Nyam">
+    <button id="closeCookies">Cerrar</button>
+</dialog>
+
+<dialog class="DebugDialog">
+    <h5>Debug Options:</h5>
+    <span><input type="checkbox" id="Loginin">Login In</input></span>
+    <br>
+    <p>TODO: shadow header/ center footer mobile</p>
+    <p>change title svg</p>
+    <br>
+    <button id="closeDebug">Cerrar</button>
+</dialog>
+
+<dialog class="LoginDialog">
+    <h5>Login:</h5>
+    <form id="loginForm">
+        <label for="username">Usuario:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button type="submit">Iniciar sesión</button>
+    </form>
+    <button id="closeLogin">Cerrar</button>
+</dialog>

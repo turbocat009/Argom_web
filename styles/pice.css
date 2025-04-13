@@ -1,0 +1,22 @@
+.Object{
+    display: flex;
+    flex-direction: column;
+}
+
+.Object > form > input{
+    background-color: #E6E6E6;
+    opacity: 50%;
+    border: none;
+    border-radius: 16px;
+    width: 246px;
+    height: 48px;
+    padding: 0;
+    appearance: textfield;
+    margin: 5px;
+    padding-left: 20px;
+}
+
+.Object>form>input:hover {
+    background-color: #E6E6E6;
+    opacity: 100%;
+}
