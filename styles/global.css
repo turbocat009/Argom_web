@@ -38,6 +38,12 @@ p{
     text-align: center;
 }
 
+h6{
+    font-size: 32px;
+    font-weight: 600;
+    margin: 10px;
+}
+
 div{
     display: flex;
     justify-content: center;

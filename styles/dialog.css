@@ -5,7 +5,7 @@ dialog {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     padding: 20px;
     margin: auto;
-    max-width: 500px;
+    max-width: 750px;
 }
 
 dialog::backdrop {
@@ -34,7 +34,7 @@ dialog button:hover {
 }
 
 dialog img {
-    width: 100%;
+    width: 50vh;
     height: auto;
     border-radius: 8px;
 }

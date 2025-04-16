@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     NotaDialog.addEventListener("click", onClickNota);
     MapDialog.addEventListener("click", onClickMap);
     CookiesDialog.addEventListener("click", onClickCookies);
-    LoginDialog.addEventListener("click", onClickCookies);
+    LoginDialog.addEventListener("click", onClickCookies);  
 
     openNota.addEventListener("click", () => {
         NotaDialog.showModal();
@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     openCookies.addEventListener("click", () => {
         CookiesDialog.showModal();
+        CookiesDialog.scrollTop = 0;    
     });
     closeCookies.addEventListener("click", () => {
         CookiesDialog.close();
