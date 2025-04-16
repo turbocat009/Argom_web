@@ -20,7 +20,7 @@ body{
     height: 100vh;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
-    color: #333;
+    color: var(--color-text);
     margin: 0px;
     padding: 0px;
 }
@@ -66,4 +66,8 @@ input {
 }
 .flex-row {
     flex-direction: row;
+}
+
+.margin-0{
+    margin: 0px;
 }
