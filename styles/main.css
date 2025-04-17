@@ -19,8 +19,8 @@
         font-weight: 400;
         padding: 5px;
         padding-top: 5px;
-        height: 40vh;
-        width: 40vh;
+        height: 400px;
+        width: 356px;
         align-content: center;
     }
 
@@ -41,7 +41,7 @@
         width: 30vh;
         border-radius: 8px;
     }
-    @media (min-width: 1600px) {
+    @media (min-width: 1551px) {
         main{
             grid-template-columns: 1fr 1fr 1fr;
         }

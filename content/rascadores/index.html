@@ -6,6 +6,7 @@
     <script src="/src/scripts/openDialog.js"></script>
     <script src="/src/scripts/testFetures.js"></script>
     <script src="/src/scripts/responsive.js"></script>
+    <script src="/src/scripts/changePage.js"></script>
     <link rel="shortcut icon" href="/src/pictures/favicon.webp" type="image/x-icon">
     <link rel="stylesheet" href="/styles/global.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -65,9 +66,33 @@
                 <li><a href="/content/mecanizaciones/">MECANIZACIONES ESPECIALES</a></li>
             </ul>
         </aside>
-        <main class="Object">
+        <div class="Object">
+            <section class="MobileFilter">
+                <select class="MobileOnly" name="obj" id="obj">
+                    <option value="RASCADORES">RASCADORES</option>
+                    <option value="JUNTAS DE VÁSTAGO">JUNTAS DE VÁSTAGO</option>
+                    <option value="JUNTAS DE PISTÓN">JUNTAS DE PISTÓN</option>
+                    <option value="ELEMENTOS DE GUIADO">ELEMENTOS DE GUIADO</option>
+                    <option value="TÓRICAS Y AROS DE APOYO">TÓRICAS Y AROS DE APOYO</option>
+                    <option value="RETENES">RETENES</option>
+                    <option value="ROTATIVAS">ROTATIVAS</option>
+                    <option value="JUNTAS PARA RACORD Y BRIDA">JUNTAS PARA RACORD Y BRIDA</option>
+                    <option value="CAJAS">CAJAS</option>
+                    <option value="RÓTULAS">RÓTULAS</option>
+                    <option value="FUELLES">FUELLES</option>
+                    <option value="PERFILES Y PLANCHAS">PERFILES Y PLANCHAS</option>
+                    <option value="HERRAMIENTAS">HERRAMIENTAS</option>
+                    <option value="MECANIZACIONES ESPECIALES">MECANIZACIONES ESPECIALES</option>
+                </select>
+                <select class="MobileOnly" name="type" id="type">
+                    <option value="TODOS LOS TIPOS">TODOS LOS TIPOS</option>
+                    <option value="CAJERA CERRADA">CAJERA CERRADA</option>
+                    <option value="CAJERA POR SEGUIR">CAJERA POR SEGUIR</option>
+                    <option value="CAJERA ABIERTA">CAJERA ABIERTA</option>
+                </select>
+            </section>
             <h1>RASCADORES</h1>
-            <form>
+            <form class="DesktopOnly">
                 <button>TODOS LOS TIPOS</button>
                 <p>|</p>
                 <ul>
@@ -76,11 +101,11 @@
                     <li><button>CAJERA ABIERTA</button></li>
                 </ul>
             </form>
-            <form>
+            <form class="Sizes">
+                <img src="/src/pictures/SEARCH.svg" alt="Search" class="MobileOnly">
                 <input type="number" name="Interior" placeholder="Interior" min="0">
                 <input type="number" name="Exterior" placeholder="Exterior" min="0">
                 <input type="number" name="Altura" placeholder="Altura" min="0">
-
             </form>
             <main class="margin-0 mainPice">
                 <a class="pice moreConcretPice" href="/content/rascadores/">
@@ -108,17 +133,19 @@
                     <img class="productIMG" src="/src/pictures/pices/WM.svg" alt="Foto de Rascadores">
                     <summary>Rascador, para alojamiento <br>abierto, alta temperatura o <br>alta carga de suciedad</summary>
                 </a>
-                <a class="pice moreConcretPice" href="/content/rascadores/">
-                    <h5>WM</h5>
-                    <img class="productIMG" src="/src/pictures/pices/WM.svg" alt="Foto de Rascadores">
-                    <summary>Rascador, para alojamiento <br>abierto, alta temperatura o <br>alta carga de suciedad</summary>
-                </a>
                 <button id="DebugButton">
                     <img class="productIMG" src="/src/favicon.svg" alt="Foto de Mecanizaciones Especiales">
                     <h5>Debug Menu</h5>
                 </button>
             </main>
-        </main>
+            <nav class="pagination">
+                <button><</button>
+                <button>1</button>
+                <button class="selected">2</button>
+                <button>3</button>
+                <button>></button>
+            </nav>
+        </div>
     </section>
     <footer>
         <div class="footerInfo">
