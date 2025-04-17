@@ -41,17 +41,17 @@
         width: 30vh;
         border-radius: 8px;
     }
-    @media (min-width: 1416px) {
+    @media (min-width: 1600px) {
         main{
             grid-template-columns: 1fr 1fr 1fr;
         }
     }
-    @media (min-width: 2046px) {
+    @media (min-width: 2274px) {
         main{
             grid-template-columns: 1fr 1fr 1fr 1fr;
         }
     }
-    @media (min-width: 2600px) {
+    @media (min-width: 2799px) {
         main{
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         }

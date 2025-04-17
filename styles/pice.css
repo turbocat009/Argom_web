@@ -35,6 +35,8 @@
     appearance: textfield;
     margin: 0px;
     padding-left: 20px;
+    font-size: 16px;
+    margin-bottom: 50px;
 }
 
 
@@ -67,13 +69,41 @@
     margin: 0px;
 }
 
-nav{
-    display: grid;
-    
-    align-items: start;
-    gap: 20px;
-    margin-top: 20px;
+.moreConcretPice{
+    justify-content: start;
+    height: 400px;
+    width: 356px;
 }
+
+.moreConcretPice>h5{
+    color: var(--color-text);
+    text-align: start;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+.moreConcretPice>img{
+    width: 135px;
+    height: 150px;
+    border-radius: 16px;
+    margin: 50px 20px 50px 20px;
+}
+
+.moreConcretPice>summary {
+    color: var(--color-text);
+    text-align: start;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 20px 20px 20px 20px;
+}
+
+
 
 /* Hover */
 
