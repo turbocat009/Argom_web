@@ -1,5 +1,4 @@
 @media(max-width: 768px) {
-
     .Object {
         display: flex;
         flex-direction: column;
@@ -71,7 +70,7 @@
 
     .Sizes>input{
         margin: 0px;
-        width: 60px;
+        width: 90px;
         appearance: textfield;
         background-color: #E6E6E6;
         opacity: 50%;
@@ -87,29 +86,49 @@
         display: none;
     }
     
-
-    .moreConcretPice {
+    main{
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr; 
         justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin: 10px;
+        top: 150px;
+    }
+    main a{
+        background-color: #E6E6E680;
+        color: var(--color-text);
+        border-radius: 8px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        text-decoration: none;
+        text-align: center;
+        padding: 5px;
         height: 31vh;
         width: 20vh;
     }
 
-    .moreConcretPice>h5 {
+    main a:hover{
+        background-color: #e6e6e6c2;
+        color: var(--color-text);
+    }
+
+    main a h5{
+        margin: 10px;
+        font-weight: 400;
         color: var(--color-text);
         text-align: start;
-        position: relative;
-        top: 0px;
         font-size: 3vh;
         line-height: 23px;
         letter-spacing: 0%;
         vertical-align: middle;
-        font-weight: 350;
     }
 
-    .moreConcretPice>img {
+    .moreConcretPice {
+
+    }
+
+    .productIMG {
         max-width: 8vh;
         width: 6vh;
         height: 8vh;
@@ -117,7 +136,7 @@
         justify-self: center;
     }
 
-    .moreConcretPice>summary {
+    main a summary {
         color: var(--color-text);
         text-align: start;
         font-size: 1.5vh;

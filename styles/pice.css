@@ -1,3 +1,5 @@
+@import url(./mobile/pice.css);
+@import url(./tablet/pice.css);
 @media(min-width: 1025px) {
     .Object{
         display: flex;
@@ -70,29 +72,53 @@
         margin: 0px;
     }
 
-    .moreConcretPice{
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        gap: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-bottom: 50px;
+    }
+    main a {
+        background-color: #E6E6E680;
+        color: var(--color-text);
+        border-radius: 8px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 400;
+        padding: 5px;
+        padding-top: 5px;
         justify-content: start;
         height: 400px;
         width: 356px;
+        align-content: center;
     }
-
-    .moreConcretPice>h5{
+    main a:hover {
+        background-color: #e6e6e6c2;
+        color: var(--color-text);
+    }
+    
+    main a h5{
+        font-size: 32px;
+        margin: 10px;
+        font-weight: 400;
         color: var(--color-text);
         text-align: start;
-        font-size: 32px;
         line-height: 120%;
-        letter-spacing: 0%;
         vertical-align: middle;
     }
 
-    .moreConcretPice>img{
+    .productIMG{
         width: 135px;
         height: 150px;
         border-radius: 16px;
         margin: 50px 20px 50px 20px;
     }
 
-    .moreConcretPice>summary {
+    main a summary {
         color: var(--color-text);
         text-align: start;
         font-size: 16px;
@@ -180,4 +206,28 @@
             margin: 30px 20px 30px 20px;
         }
     }
+
+        @media (min-width: 1551px) {
+            main {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+    
+        @media (min-width: 2274px) {
+            main {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+    
+        @media (min-width: 2799px) {
+            main {
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            }
+        }
+    
+        @media (min-width: 3333px) {
+            main {
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            }
+        }
 }

@@ -1,0 +1,14 @@
+@import url(./mobile/LastProductView.css);
+
+.SizesLast{
+    gap: 50px
+}
+
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+}

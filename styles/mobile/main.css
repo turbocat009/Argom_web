@@ -8,11 +8,6 @@
         margin: 10px;
         top: 150px;
     }
-
-    .IDK{
-                grid-template-columns: 1fr;
-    }
-
     main a{
         background-color: #E6E6E680;
         color: var(--color-text);

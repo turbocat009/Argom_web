@@ -1,0 +1,14 @@
+.MobileFilterLast{
+    width: 100%;
+    height: 39px;
+    border-radius: 16px;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    text-align: start;
+    background-color: white;
+    border: 1px solid #33333380
+}
