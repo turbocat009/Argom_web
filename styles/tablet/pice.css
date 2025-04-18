@@ -31,12 +31,17 @@
     }
 
     .Object>form {
-        align-items: start;
+        align-items: center;
         justify-items: start;
         color: #E6E6E6;
         user-select: none;
     }
 
+    .Object > form > input::-webkit-outer-spin-button,
+    .Object>form>input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
 
     .Object>form>input {
         background-color: #E6E6E6;
@@ -70,8 +75,8 @@
         border-radius: 16px;
         color: var(--color-text);
         margin: 0px;
+        align-self: center;
     }
-
 
     .Object>form>ul>li>button {
         background-color: #FFF;
@@ -119,7 +124,7 @@
             color: var(--color-text);
         }
 
-    main a h5{
+    main a h2{
         margin: 10px;
         font-weight: 400;
         color: var(--color-text);
@@ -248,7 +253,12 @@
             gap: 10px;
         }
 
+        .Object>form {
+            align-items: start;
+        }
+
         .Object>form>button{
+            align-self: start;
             width: 500px;
         }
 
@@ -261,29 +271,40 @@
             width: 160px;
         }
 
-        .moreConcretPice {
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-left: 25px;
+            margin-right: 25px;
+            top: 150px;
+            min-width: 500px;
+        }
+
+        main a {
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr 1fr;
             justify-content: center;
             height: 31vh;
-            width: 20vh;
+            width: 19.5vh;
         }
 
-        .moreConcretPice>h5 {
-            
+        main >a > h2 {
+            margin: 10px;
+            margin-left: 30px;
+            font-weight: 400;
             color: var(--color-text);
             text-align: start;
-            position: relative;
-            top: 0px;
             font-size: 3vh;
-            line-height: 23px;
+            line-height: 120%;
             letter-spacing: 0%;
             vertical-align: middle;
-            font-weight: 350;
         }
 
-        .moreConcretPice>img {
+        a >main >img {
             max-width: 8vh;
             width: 6vh;
             height: 8vh;
@@ -291,16 +312,17 @@
             justify-self: center;
         }
 
-        .moreConcretPice>summary {
+        main a summary {
             color: var(--color-text);
             text-align: start;
-            font-size: 1.5vh;
+            font-size: 1.2vh;
             line-height: 120%;
             letter-spacing: 0%;
             vertical-align: middle;
             font-weight: 400;
             text-transform: uppercase;
             margin: 15px;
+            margin-left: 30px;
             align-self: end;
         }
 

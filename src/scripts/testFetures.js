@@ -3,12 +3,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const closeNote = document.getElementById("closeDebug");
     const DebugDialog = document.querySelector(".DebugDialog");
 
-    openDebug.addEventListener("click", () => {
-        DebugDialog.showModal();
-    });
-    closeNote.addEventListener("click", () => {
-        DebugDialog.close();
-    });
+    if (openDebug) {
+        openDebug.addEventListener("click", () => {
+            DebugDialog.showModal();
+        });
+    }
+    if (closeNote) {        
+        closeNote.addEventListener("click", () => {
+            DebugDialog.close();
+        });
+    }
 
     let logedIn = false;
     const login = document.getElementById("Loginin");

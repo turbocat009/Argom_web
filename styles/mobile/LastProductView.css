@@ -1,14 +1,191 @@
-.MobileFilterLast{
-    width: 100%;
-    height: 39px;
-    border-radius: 16px;
-    font-family: "Open Sans";
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 23px;
-    letter-spacing: 0%;
-    text-transform: uppercase;
-    text-align: start;
-    background-color: white;
-    border: 1px solid #33333380
+@media(max-width: 768px) {
+
+
+        .Object {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 100%;
+            gap: 20px;
+            margin: 0px 30px 20px 30px;
+            z-index: 1;
+        }
+
+    
+        .Object>h1 {
+            color: var(--color-text);
+            align-self: baseline;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            margin: 10px 0px 10px 0px;
+        }
+
+        .MobileFilter{
+            width: 100%;
+            height: 39px;
+            border-radius: 16px;
+            font-family: "Open Sans";
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 23px;
+            letter-spacing: 0%;
+            text-transform: uppercase;
+            text-align: start;
+            background-color: white;
+            border: 1px solid #33333380
+        }
+
+        .Object>h1>a{
+            color: #333;
+            opacity: 40%;
+            text-decoration: none;
+        }
+    
+    
+        .Sizes {
+            display: grid;
+            grid-template-columns: 20px 1fr 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            gap: 10px;
+        }
+    
+        .Sizes>input::-webkit-outer-spin-button,
+        .Sizes>form>input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    
+        .Sizes>input {
+            margin: 0px;
+            width: 80px;
+            appearance: textfield;
+            background-color: #E6E6E6;
+            opacity: 50%;
+            border: none;
+            border-radius: 8px;
+        }
+    
+        .Sizes>input:hover {
+            opacity: 100%;
+        }
+    
+        .DesktopOnly {
+            display: none;
+        }
+
+                main {
+                    display: flex;
+                    flex-direction: column;
+                    justify-items: start;
+                    align-items: start;
+                    gap: 50px;
+                    margin-left: 50px;
+                    margin-right: 50px;
+                    padding-bottom: 50px;
+                    width: 100%;
+                }
+        
+                main article {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: start;
+                    width: 90%;
+                    min-width: none;
+                    border: 1px solid #33333333;
+                    border-radius: 8px;
+                    padding: 20px 30px 20px 30px;
+                }
+        
+                main article img {
+                    width: 70px;
+                    height: 80px;
+                    margin: 0px 20px 0px 0px;
+                }
+        
+                main article section {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: start;
+                    margin: 0px;
+                }
+        
+                main article section div {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    justify-content: start;
+                    align-items: start;
+                    gap: 5px;
+                }
+        
+                main article section div h2 {
+                    font-size: 26px;
+                    font-weight: 400;
+                    color: var(--color-text);
+                    justify-items: start;
+                    align-self: start;
+                    margin: 0px;
+                }
+        
+                main article section div summary {
+                    border-radius: 16px;
+                    padding: 4px 8px 4px 8px;
+                    gap: 10px;
+                    border: 1px solid #333333;
+                    align-self: start;
+                    user-select: none;
+                }
+        
+        
+                main article section p {
+                    display: none;
+                }
+        
+                main article section a {
+                    display: none;
+                }
+        
+                .Options {
+                    display: none;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: end;
+                    gap: 20px;
+                    width: fit-content;
+                    padding: 0px;
+                }
+        
+                .Options>button {
+                    background-color: var(--color-primary);
+                    color: #FFF;
+                    height: 39px;
+                    margin: 0px;
+                    padding: 10px 16px 10px 16px;
+                    width: 119px;
+                    height: 39px;
+                    border-radius: 16px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    text-align: center;
+                }
+        
+                .Options>a {
+                    background-color: #FFF;
+                    color: var(--color-primary);
+                    height: 39px;
+                    margin: 0px;
+                    padding: 10px 16px 10px 16px;
+                    width: 87px;
+                    height: 19px;
+                    border-radius: 16px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    border: 1px solid var(--color-primary);
+                    text-decoration: none;
+                    text-align: center;
+                }
+
 }

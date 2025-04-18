@@ -39,8 +39,8 @@
 
     .productIMG{
         margin-top: 10px;
-        height: 30vh;
-        width: 30vh;
+        height: 300px;
+        width: 300px;
         border-radius: 8px;
     }
     @media (min-width: 1551px) {
