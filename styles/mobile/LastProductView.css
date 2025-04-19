@@ -34,7 +34,8 @@
             text-transform: uppercase;
             text-align: start;
             background-color: white;
-            border: 1px solid #33333380
+            color: black;
+            border: 1px solid #33333380;
         }
 
         .Object>h1>a{
