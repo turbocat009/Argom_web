@@ -80,9 +80,9 @@
                 main {
                     display: flex;
                     flex-direction: column;
-                    justify-items: start;
-                    align-items: start;
-                    gap: 50px;
+                    justify-items: center;
+                    align-items: center;
+                    gap: 25px;
                     margin-left: 50px;
                     margin-right: 50px;
                     padding-bottom: 50px;
@@ -91,37 +91,48 @@
         
                 main article {
                     display: flex;
-                    flex-direction: row;
-                    justify-content: start;
-                    width: 90%;
+                    flex-direction: column;
+                    align-items: center;
                     min-width: none;
                     border: 1px solid #33333333;
                     border-radius: 8px;
-                    padding: 20px 30px 20px 30px;
+                }
+
+                main article div{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    gap: 10px;
+                    width: 100%;
+                    margin: 15px 15px 10px 15px;
                 }
         
-                main article img {
+                main article div img {
                     width: 70px;
                     height: 80px;
-                    margin: 0px 20px 0px 0px;
+                    margin: 0px 0px 0px 20px;
                 }
         
-                main article section {
+                main article div section {
                     display: flex;
                     flex-direction: row;
                     justify-content: start;
+                    align-items: start;
                     margin: 0px;
+                    padding: 0px;
+                    width: fit-content;
                 }
         
-                main article section div {
+                main article div section div {
                     display: flex;
-                    flex-direction: column-reverse;
+                    flex-direction: column;
                     justify-content: start;
                     align-items: start;
                     gap: 5px;
+                    padding: 0px;
                 }
         
-                main article section div h2 {
+                main article div section div h2 {
                     font-size: 26px;
                     font-weight: 400;
                     color: var(--color-text);
@@ -130,7 +141,7 @@
                     margin: 0px;
                 }
         
-                main article section div summary {
+                main article div section div summary {
                     border-radius: 16px;
                     padding: 4px 8px 4px 8px;
                     gap: 10px;
@@ -138,54 +149,111 @@
                     align-self: start;
                     user-select: none;
                 }
+
+    main article section summary span {
+        color: var(--color-text);
+        opacity: 50%;
+    }
+
+    .MobileInfos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+        width: fit-content;
+        padding: 0px 0px 0px 0px;
+        right: 3vh;
+    }
         
+    .CONSULTAR{
+        width: 50px;
+        height: 31px;
+        border-radius: 16px;
+        padding: 4px 16px 4px 16px;
+        gap: 10px;
+        border: 1px solid #F39135;
+        background-color: #FFF;
+        display: flex;
+        align-items: center;
+        margin: 0px 5px 0px 8px;
+        cursor: pointer;
+    }
+    
+    .CONSULTAR img {
+        width: 18px;
+        height: 18px;
+        margin: 0px;
+    }
+
+    .STOCK {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 23px;
+        border-radius: 16px;
+        padding: 4px 8px 4px 8px;
+        gap: 5px;
+        background: #F39135;
+        color: #FFF;
+        font-size: 14px;
+    }
         
-                main article section p {
-                    display: none;
-                }
+    .STOCK img {
+        width: 18px;
+        height: 18px;
+        margin: 0px;
+    }
         
-                main article section a {
-                    display: none;
-                }
+
+    .Options{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: fit-content;
+        padding: 10px 0px 10px 0px;
+        width: 100%;
+        margin-top: 10px;
+        background-color: #F2F2F2;
+    }
         
-                .Options {
-                    display: none;
-                    flex-direction: column;
+                .Options>button,
+                .Options>a {
+                    display: flex;
                     justify-content: center;
-                    align-items: end;
-                    gap: 20px;
+                    align-items: center;
+                    gap: 10px;
                     width: fit-content;
-                    padding: 0px;
-                }
+                    padding: 0px 0px 0px 0px;
+                    right: 3vh;
+    }
         
                 .Options>button {
-                    background-color: var(--color-primary);
-                    color: #FFF;
-                    height: 39px;
-                    margin: 0px;
-                    padding: 10px 16px 10px 16px;
                     width: 119px;
-                    height: 39px;
+                    height: 30px;
                     border-radius: 16px;
+                    padding: 8px 16px 8px 16px;
+                    gap: 10px;
+                    background: var(--color-primary);
+                    color: #FFF;
                     cursor: pointer;
-                    font-size: 16px;
-                    text-align: center;
                 }
         
                 .Options>a {
-                    background-color: #FFF;
-                    color: var(--color-primary);
-                    height: 39px;
-                    margin: 0px;
-                    padding: 10px 16px 10px 16px;
-                    width: 87px;
-                    height: 19px;
+                    width: 119px;
+                    height: 30px;
                     border-radius: 16px;
-                    cursor: pointer;
-                    font-size: 16px;
-                    border: 1px solid var(--color-primary);
+                    gap: 10px;
+                    background: #FFF0;
+                    color: var(--color-primary);
                     text-decoration: none;
-                    text-align: center;
+                    border: 1px solid #F39135;
                 }
+    .DesktopOnly {
+        display: none;
+    }
 
 }

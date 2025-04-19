@@ -60,7 +60,7 @@
         flex-direction: column;
         justify-items: start;
         align-items: start;
-        gap: 50px;
+        gap: 25px;
         margin-left: 50px;
         margin-right: 50px;
         padding-bottom: 50px;
@@ -71,6 +71,7 @@
         display: flex;
         flex-direction: row;
         justify-content: start;
+        align-items: center;
         width: 100%;
         min-width: none;
         border: 1px solid #33333333;
@@ -78,29 +79,30 @@
         padding: 20px 30px 20px 30px;
     }
 
-    main article img {
+    main article div img {
         width: 135px;
         height: 150px;
         margin: 0px 20px 0px 0px;
     }
 
-    main article section {
+    main article div section {
         display: grid;
-        grid-template-rows: 50px 1fr 20px;
+        grid-template-rows: 75px 1fr 20px;
         grid-template-columns: 1fr;
         align-items: end;
         width: 100%;
+        margin-right: 10px;
     }
 
-    main article section div {
+    main article div section div {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: start;
         align-items: start;
-        gap: 20px;
+        gap: 5px;
     }
 
-    main article section div h2 {
+    main article div section h2 {
         font-size: 32px;
         font-weight: 400;
         color: var(--color-text);
@@ -109,17 +111,32 @@
         margin: 0px;
     }
 
-    main article section div summary {
+    main article div section div section{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    main article div section div summary {
         border-radius: 16px;
         padding: 4px 8px 4px 8px;
         gap: 10px;
+        margin: 0px;
         border: 1px solid #333333;
         align-self: start;
         user-select: none;        
     }
 
+    main article div section div summary span {
+        color: var(--color-text);
+        opacity: 50%;
+    }
 
-    main article section p {
+
+    main article div section p {
         color: var(--color-text);
         text-align: start;
         font-size: 16px;
@@ -134,20 +151,21 @@
         align-self: end;
     }
 
-    main article section a{
+    main article div section a{
         text-align: start;
         color: var(--color-text);
     }
 
-        .Options {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: end;
-            gap: 20px;
-            width: fit-content;
-            padding: 0px;
-                }
+    .Options {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: end;
+        gap: 20px;
+        width: fit-content;
+        padding: 0px;
+        width: 100%;
+    }
 
     .Options>button {
         background-color: var(--color-primary);
@@ -212,6 +230,12 @@
         color: #333;
         opacity: 100%;
     }
+
+    .MobileInfos{
+        margin: 0px;
+    }
+
+
 
 
 
