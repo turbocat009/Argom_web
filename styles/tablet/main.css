@@ -1,4 +1,4 @@
-@media (max-width: 1200px) and (min-width: 768px) {
+@media (max-width: 1150px) and (min-width: 768px) {
     main{
         display: grid;
         grid-template-columns: 1fr 1fr; 
@@ -44,8 +44,8 @@
 
     .productIMG {
         margin-top: 10px;
-        height: 25vh;
-        width: 25vh;
+        height: 200px;
+        width: 200px;
         border-radius: 8px;
         justify-self: center;
     }

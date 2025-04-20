@@ -1,6 +1,6 @@
 @import url(./mobile/main.css);
 @import url(./tablet/main.css);
-@media(min-width: 1025px) {
+@media(min-width: 1150px) {
     main{
         display: grid;
         grid-template-columns: 1fr 1fr; 
