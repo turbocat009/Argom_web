@@ -201,12 +201,12 @@
     }
 
     @media(max-width: 1100px) and (min-width: 769px) {
-        .moreConcretPice{
+        main a{
             height: 350px;
             width: 306px;
         }
 
-        .moreConcretPice>img{
+        main a img{
             width: 105px;
             height: 115px;
             margin: 30px 20px 30px 20px;

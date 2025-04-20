@@ -215,4 +215,18 @@
         background-color: var(--color-primary);
         color: #F6F6F6
     }
+
+    @media (max-width: 350px) {
+        .Sizes{
+            grid-template-columns: 1fr 1fr 1fr;        
+        }
+        .Sizes img{
+            display: none;
+        }
+
+        .Sizes>input{
+            width: 50px;
+        }
+
+    }
 }
