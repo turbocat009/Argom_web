@@ -221,15 +221,15 @@
         background-color: #F2F2F2;
     }
         
-                .Options>button,
-                .Options>a {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 10px;
-                    width: fit-content;
-                    padding: 0px 0px 0px 0px;
-                    right: 3vh;
+    .Options>button,
+    .Options>a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: fit-content;
+        padding: 0px 0px 0px 0px;
+        right: 3vh;
     }
         
                 .Options>button {
@@ -255,6 +255,33 @@
                 }
     .DesktopOnly {
         display: none;
+    }
+
+    @media (max-width: 350px) {
+        .Sizes {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .Sizes>input {
+            width: 50px;
+        }
+        .Sizes>img{
+            display: none;
+        }
+
+        main article div img {
+            width: 50px;
+            height: 60px;
+        }
+
+        main article div section div h2 {
+            font-size: 24px;
+        }
+
+        main article div section div summary {
+            font-size: 12px;
+        }
+        
     }
 
 }
