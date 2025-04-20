@@ -1,9 +1,9 @@
 @media(max-width: 768px) {
 
-
         .Object {
             display: flex;
             flex-direction: column;
+            justify-content: start;
             align-items: center;
             max-width: 100%;
             gap: 20px;
@@ -253,10 +253,131 @@
                     text-decoration: none;
                     border: 1px solid #F39135;
                 }
+
+    .Buy{
+        display: grid;
+        grid-template-columns: 125px 1fr;
+        background-color: var(--color-primary);
+        border-radius: 0px 0px 8px 8px;
+        margin-top: 10px;
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .BuyAnimation{
+        animation: fadeOut 0.3s ease-in-out;
+    }
+
+    .x{
+        display: none;
+    }
+
+    .Price{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        color: #FFF;
+        font-size: 15px;
+    }
+
+    .Price p{
+        text-align: start;
+    }
+
+    .Buttons{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+    .Buttons span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0.5px solid #FFFFFF;
+        border-radius: 16px;
+        height: 30px;
+        width: 98px;
+    }
+
+    .Buttons span input::-webkit-outer-spin-button,
+    .Buttons span input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+     }
+
+    .Buttons span input{
+        border: none;
+        text-align: center;
+        background: none;
+        color: #FFF;
+        appearance: textfield;
+        width: 25px;
+        height: 32px;
+        margin: 0px;
+        padding: 0px;
+        font-size: 12px;
+    }
+
+        .Buttons span button {
+            background: none;
+            color: #FFF;
+            border-radius: 16px;
+            border: none;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            margin: 0px;
+            padding: 0px;
+            font-weight: 600;
+            text-align: end;
+            font-size: 12px;
+        }
+    
+        .Buttons span button:first-child {
+            text-align: start;
+        }
+
+        .PEDIR {
+            width: 98px;
+            height: 30px;
+            border-radius: 16px;
+            gap: 10px;
+            background: #FFFFFF;
+            color: var(--color-primary);
+            border: 1px solid #FFFFFF;
+            cursor: pointer;
+            margin: 0px;
+            text-align: center;
+        }
+    
     .DesktopOnly {
         display: none;
     }
 
+    /* Animations */
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeOut {
+        0% {
+            opacity: 1;
+        }
+        100% {            
+            opacity: 0;
+
+        }
+    }
+
+
+    /* Responsive */
     @media (max-width: 350px) {
         .Sizes {
             grid-template-columns: 1fr 1fr 1fr;
@@ -280,6 +401,10 @@
 
         main article div section div summary {
             font-size: 12px;
+        }
+
+        .Buy{
+            grid-template-columns: 100px 1fr;
         }
         
     }

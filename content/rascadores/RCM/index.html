@@ -7,7 +7,7 @@
     <script src="/src/scripts/testFetures.js"></script>
     <script src="/src/scripts/responsive.js"></script>
     <script src="/src/scripts/changePage.js"></script>
-    <script src="/src/scripts/openShopOptions.js"></script>
+    <script src="/src/scripts/shopOptions.js"></script>
     <link rel="shortcut icon" href="/src/pictures/favicon.webp" type="image/x-icon">
     <link rel="stylesheet" href="/styles/global.css">
     <link rel="stylesheet" href="/styles/LastProductView.css">
@@ -96,7 +96,7 @@
                 <article class="product">
                     <div>
                         <img src="/src/pictures/pices/RCM.svg" alt="Imagen del procudto RCM">
-                        <section>
+                        <section class="mainInfo">
                             <div>
                                 <section class="MobileOnly MobileInfos">
                                     <summary>RCM <span>NBR</span></summary>
@@ -112,29 +112,19 @@
                     </div>
                     <section id="Options" class="Options DesktopOnly">
                         <a href="#">CONSULTAR</a>
-                        <button class="PEDIR">PEDIR</button>
+                        <button class="openPEDIR">PEDIR</button>
                     </section>
-                </article>
-                <article class="product">
-                    <div>
-                        <img src="/src/pictures/pices/RCM.svg" alt="Imagen del procudto RCM">
-                        <section>
-                            <div>
-                                <section class="MobileOnly MobileInfos">
-                                    <summary>RCM <span>NBR</span></summary>
-                                    <button class="CONSULTAR"><img src="/src/pictures/CONSULTAR.svg" alt="Consultar"></button>
-                                    <span class="STOCK"><img src="/src/pictures/box-open 1.svg" alt="Stock">57</span>
-                                </section>
-                                <summary class="DesktopOnly">RCM <span>NBR</span></summary>
-                                <h2>7X13X6,00</h2>
-                            </div>
-                            <p class="DesktopOnly">STOCK: 57</p>
-                            <a class="DesktopOnly" href="https://youtu.be/jJwVL5w_B3c?si=GO3tmBpDFrxnv1_9">DESCARGAR PDF</a>
-                        </section>
-                    </div>
-                    <section id="Options" class="Options DesktopOnly">
-                        <a href="#">CONSULTAR</a>
-                        <button class="PEDIR">PEDIR</button>
+                    <section id="Buy" class="none">
+                        <button id="x" class="x">X</button>
+                        <div class="Price">
+                            <p>DTO: 0</p>
+                            <p>PVP: 2.3</p>
+                            <p>TOTAL: ?</p>
+                        </div>
+                        <div class="Buttons">
+                            <span><button id="-">-</button><input type="number" min="1" id="amountofproduct"><button id="+">+</button></span>
+                            <button id="AddToCart" class="PEDIR">PEDIR</button>
+                        </div>
                     </section>
                 </article>
                 
