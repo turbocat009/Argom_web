@@ -260,11 +260,11 @@
         background-color: var(--color-primary);
         border-radius: 0px 0px 8px 8px;
         margin-top: 10px;
-        animation: fadeIn 0.3s ease-in-out;
+        animation: fadeInMobile 0.3s ease-in-out;
     }
 
     .BuyAnimation{
-        animation: fadeOut 0.3s ease-in-out;
+        animation: fadeOutMobile 0.3s ease-in-out;
     }
 
     .x{
@@ -357,7 +357,7 @@
     }
 
     /* Animations */
-    @keyframes fadeIn {
+    @keyframes fadeInMobile {
         0% {
             opacity: 0;
         }
@@ -366,7 +366,7 @@
         }
     }
 
-    @keyframes fadeOut {
+    @keyframes fadeOutMobile {
         0% {
             opacity: 1;
         }
