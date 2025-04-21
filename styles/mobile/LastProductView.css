@@ -167,21 +167,21 @@
         right: 3vh;
     }
         
-    .CONSULTAR{
-        width: 50px;
+    .PDF{
+        width: 40px;
         height: 31px;
         border-radius: 16px;
-        padding: 4px 16px 4px 16px;
         gap: 10px;
         border: 1px solid #F39135;
         background-color: #FFF;
         display: flex;
         align-items: center;
+        justify-content: center;
         margin: 0px 5px 0px 8px;
         cursor: pointer;
     }
     
-    .CONSULTAR img {
+    .PDF img {
         width: 18px;
         height: 18px;
         margin: 0px;
@@ -353,6 +353,15 @@
         }
     
     .DesktopOnly {
+        display: none;
+    }
+
+    #DebugButton{
+        width: 100px;
+        height: 30px;
+    }
+
+    #DebugButton img{
         display: none;
     }
 

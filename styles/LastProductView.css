@@ -201,6 +201,11 @@
         border: 1px solid var(--color-primary);
         text-decoration: none;
         text-align: center;
+   }
+
+   .Options a:hover {
+        background-color: #EEE;
+
     }
 
     .Buy{
@@ -329,7 +334,7 @@
     }
 
     .PEDIR:hover{
-        background: var(--color-primary);
+        background:rgb(200, 119, 44);
         color: #FFF;
     }
 

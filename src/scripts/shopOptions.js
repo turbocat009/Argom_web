@@ -1,8 +1,8 @@
-
+// This script controls all the shop logic for the visual part
 
 //Open and close the menu
 document.addEventListener("DOMContentLoaded", () => {
-    const Pedir = document.getElementsByClassName("openPEDIR");
+    const Pedir = document.getElementsByClassName("PEDIR");
     const Menu = document.getElementById("Buy");
     const Buttons = document.getElementById("Options");
     const X = document.getElementById("x");
@@ -24,25 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
             Buttons.classList.add("Options");
         }, 200);
 
-    });
-
-});
-
-
-//Open and close the mobile menu
-document.addEventListener("DOMContentLoaded", () => {
-    const article = document.getElementsByClassName("product");
-    const options = document.getElementById("Options");
-    let clicked = false;
-
-    article[0].addEventListener("click", (event) => {
-        if (clicked) {
-            options.classList.add("DesktopOnly");
-            clicked = false;
-        } else {
-            options.classList.remove("DesktopOnly");
-            clicked = true;
-        }
     });
 
 });
