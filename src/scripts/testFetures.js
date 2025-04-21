@@ -28,7 +28,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const ContextMenuMobile = document.querySelector("#LogedInMenuMobile");
     const PedirDesktop = document.getElementById("Pedir");
     const Buttons = document.getElementById("Options");
+    const LogButtonIn = document.getElementById("LogButtonIn");
 
+    if (LogButtonIn) { 
+        LogButtonIn.addEventListener("click", () => {
+            logedIn = true;
+            login.checked = logedIn;
+        });
+    }
 
     if (login) {
         login.checked = logedIn;
