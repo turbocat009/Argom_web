@@ -1,3 +1,12 @@
+article{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: 50vh;
+    padding: 0px 10px;
+}
+
+
 .four-0-four{
     display: grid;
     grid-template-rows: 50px 50px 50px;
@@ -13,6 +22,7 @@
 .four-0-four>h2{
     font-size: 24px;
     font-weight: 400;
+    padding-top: 50px;
 }
 
 .four-0-four>a{
@@ -23,6 +33,7 @@
     border-radius: 8px;
     text-align: center;
     width: 50%;
+    margin-top: 150px;
 }
 
 .four-0-four>a:hover{

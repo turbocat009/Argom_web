@@ -229,4 +229,17 @@
         }
 
     }
+
+    @media (max-height: 600px) {
+        main a{
+            color: var(--color-text);
+            border-radius: 8px;
+            grid-template-rows: 1fr 1fr 1fr;
+            text-decoration: none;
+            text-align: center;
+            padding: 5px;
+            height: 150px;
+            width: 100px;
+        }
+    }   
 }

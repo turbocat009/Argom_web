@@ -1,6 +1,7 @@
 @import url(./mobile/LastProductView.css);
+@import url(./tablet/LastProductView.css);
 
-@media(min-width: 1175px) {
+@media(min-width: 1200px) {
     .Object {
         display: flex;
         flex-direction: column;
@@ -73,6 +74,7 @@
         justify-content: start;
         align-items: center;
         width: 100%;
+        min-width: none;
         min-width: none;
         border: 1px solid #33333333;
         border-radius: 8px;
