@@ -1,4 +1,4 @@
-@media(min-width: 769px) {
+@media(min-width: 862px) {
     section {
         display: grid;
         grid-template-columns: 256px 1fr;

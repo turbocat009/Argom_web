@@ -261,6 +261,8 @@
         border-radius: 0px 0px 8px 8px;
         margin-top: 10px;
         animation: fadeInMobile 0.3s ease-in-out;
+        width: 100%;
+        padding-top: 10px;
     }
 
     .BuyAnimation{

@@ -2,6 +2,7 @@
     footer{
         background-color: var(--color-secondary);
         color: white;
+        margin-top: auto;
     }
     
     /* Footer Info */
@@ -35,6 +36,7 @@
         justify-content: center;
         gap: 1rem;
         padding: 1rem;
+        margin-top: auto;
     }
     
     .footerLinks button{
