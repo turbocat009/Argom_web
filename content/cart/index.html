@@ -7,24 +7,23 @@
     <script src="/src/scripts/testFetures.js"></script>
     <script src="/src/scripts/responsive.js"></script>
     <script src="/src/scripts/changePage.js"></script>
-    <script src="/src/scripts/shopOptions.js"></script>
     <link rel="shortcut icon" href="/src/pictures/favicon.webp" type="image/x-icon">
     <link rel="stylesheet" href="/styles/global.css">
-    <link rel="stylesheet" href="/styles/LastProductView.css">
+    <link rel="stylesheet" href="/styles/cart.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Página de compra on-line de la empresa española de retenes Argom Seals S.L.">
     <meta name="keywords" content="Argom, Juntas, Retenes, Rascadores, O-Ring, Hidraulica, Neumatica,
     Juntas para, Catalunya, Cataluña, España, Espanya, Spain, Seals, RCM, Juntas a medida, Juntas especiales, Parker, Racord, Brida
     Maquinaria, Industrial, Sant Quirze ">
     <meta name="theme-color" content="#323F92" />
-    <meta property="og:title" content="RCM | Argom Seals S.L.">
+    <meta property="og:title" content="Rascadores | Argom Seals S.L.">
     <meta property="og:type" content="website" />
     <meta property="og:image" content="/src/pictures/favicon.webp">
     <meta property="og:url" content="https://argom.biz">
     <meta name="twitter:card" content="summary_large_image">
     <meta property="og:site_name" content="Argom Seals S.L. | Juntas de Estanquidad">
     <meta name="twitter:image:alt" content="Logo de Argom">
-    <title>RCM | Argom Seals S.L.</title>
+    <title>Carrito | Argom Seals S.L.</title>
 </head>
 
 <body>
@@ -33,7 +32,7 @@
                 src="/src/pictures/logo.avif" alt="Logo de Argom Seals S.L."></a>
         <ul class="headerlinks">
             <div class="ContextMenu MobileOnly none" id="LogedInMenuMobile">
-                <button class="CartButton"><img src="/src/pictures/cart.svg" alt=""></button>
+                <button class="CartButton"><img src="/src/pictures/content/cart.svg" alt=""></button>
                 <button class="MenuButton" id="Menu"><img src="/src/pictures/menu.svg" alt=""></button>
                 <button class="none" id="MenuC"><img src="/src/pictures/close.svg" alt=""></button>
             </div>
@@ -42,7 +41,7 @@
                 <li><a href="/">INICIO</a></li>
                 <li><a href="/search">BUSCAR</a></li>
                 <li><a href="/historic">HISTÓRICO</a></li>
-                <li><a href="/content/cart">CARRITO (1) </a></li>
+                <li><a href="/cart">CARRITO (1) </a></li>
                 <li><button id="logout">SALIR</button></li>
             </div>
             <button class="" id="login"> ÁREA PRIVADA
@@ -68,80 +67,59 @@
                 <li><a href="/content/mecanizaciones/">MECANIZACIONES ESPECIALES</a></li>
             </ul>
         </aside>
-        <div class="Object">
-            <select class="MobileOnly MobileFilter" name="obj" id="obj">
-                <option value="RASCADORES">RASCADORES</option>
-                <option value="JUNTAS DE VÁSTAGO">JUNTAS DE VÁSTAGO</option>
-                <option value="JUNTAS DE PISTÓN">JUNTAS DE PISTÓN</option>
-                <option value="ELEMENTOS DE GUIADO">ELEMENTOS DE GUIADO</option>
-                <option value="TÓRICAS Y AROS DE APOYO">TÓRICAS Y AROS DE APOYO</option>
-                <option value="RETENES">RETENES</option>
-                <option value="ROTATIVAS">ROTATIVAS</option>
-                <option value="JUNTAS PARA RACORD Y BRIDA">JUNTAS PARA RACORD Y BRIDA</option>
-                <option value="CAJAS">CAJAS</option>
-                <option value="RÓTULAS">RÓTULAS</option>
-                <option value="FUELLES">FUELLES</option>
-                <option value="PERFILES Y PLANCHAS">PERFILES Y PLANCHAS</option>
-                <option value="HERRAMIENTAS">HERRAMIENTAS</option>
-                <option value="MECANIZACIONES ESPECIALES">MECANIZACIONES ESPECIALES</option>
-            </select>
-            <h1><a href="./..">RASCADORES</a> > RCM</h1>
-            <form class="Sizes">
-                <img src="/src/pictures/SEARCH.svg" alt="Search" class="MobileOnly">
-                <input type="number" name="Interior" placeholder="Interior" min="0">
-                <input type="number" name="Exterior" placeholder="Exterior" min="0">
-                <input type="number" name="Altura" placeholder="Altura" min="0">
-            </form>
-            <main class="margin-0 mainPice">
-                <article class="product">
-                    <div>
-                        <img src="/src/pictures/pices/RCM.svg" alt="Imagen del procudto RCM">
-                        <section class="mainInfo">
-                            <div>
-                                <section class="MobileOnly MobileInfos">
-                                    <summary>RCM <span>NBR</span></summary>
-                                    <a class="PDF" 
-                                        rel="noreferrer noopener" 
-                                        target="_blank" 
-                                        href="https://youtu.be/jJwVL5w_B3c?si=GO3tmBpDFrxnv1_9">
-                                    <img src="/src/pictures/CONSULTAR.svg" alt="Consultar"></a>
-                                    <span class="STOCK"><img src="/src/pictures/box-open 1.svg" alt="Stock">28</span>
-                                </section>
-                                <summary class="DesktopOnly">RCM <span>NBR</span></summary>
-                                <h2>6X13X3,00/4,50</h2>
-                            </div>
-                            <p class="DesktopOnly">STOCK: 28</p>
-                            <a class="DesktopOnly" 
-                                rel="noreferrer noopener" 
-                                target="_blank" 
-                                href="https://youtu.be/jJwVL5w_B3c?si=GO3tmBpDFrxnv1_9"
-                            >DESCARGAR PDF</a>
-                        </section>
-                    </div>
-                    <section id="Options" class="Options DesktopOnly">
-                        <a href="#">CONSULTAR</a>
-                        <button id="Pedir" class="PEDIR none">PEDIR</button>
-                    </section>
-                    <section id="Buy" class="none">
-                        <button id="x" class="x">X</button>
-                        <div class="Price">
-                            <p>PVP: 2.3</p>
-                            <p>DTO: 0</p>
-                            <p>TOTAL: ?</p>
-                        </div>
-                        <div class="Buttons">
-                            <span><button id="-">-</button><input type="number" min="1" id="amountofproduct"><button id="+">+</button></span>
-                            <button id="AddToCart" class="PEDIR">PEDIR</button>
-                        </div>
-                    </section>
-                </article>
-                
-                <button id="DebugButton">
-                    <img class="productIMG" src="/src/favicon.svg" alt="Foto de Mecanizaciones Especiales">
-                    <p>Debug Menu</p>
-                </button>
-            </main>
+        <article class="Object">
+            <h1>CARRITO</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" value=""></th>
+                        <th>Descripción</th>
+                        <th>Stock</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Dto</th>
+                        <th>Total</th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody id="cartTable">
+                    <tr>
+                        <td><input type="checkbox" value=""></td>
+                        <td>Rascador de 50mm</td>
+                        <td>10</td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td>5.00</td>
+                        <td>0</td>
+                        <td>5.00</td>
+                        <td><button class="deleteButton"><img src="/src/pictures/delete.svg" alt="Delete img" height="20px" width="20px"></button></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" value=""></td>
+                        <td>Rascador de 50mm</td>
+                        <td>10</td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td>5.00</td>
+                        <td>0</td>
+                        <td>5.00</td>
+                        <td><button class="deleteButton"><img src="/src/pictures/delete.svg" alt="Delete img" height="20px" width="20px"></button></td>
+                    </tr>
 
+                    <tr id="totalRow">
+                        <tbody id="total">
+                            <th colspan="6">Total:</th>
+                            <th id="totalPrice">5.00</th>
+                    </tr>
+                </tbody>
+                    </tr>
+                </thead>
+            </table>
+
+
+            <!--<button id="DebugButton">
+                    <img class="productIMG" src="/src/favicon.svg" alt="Foto de Mecanizaciones Especiales">
+                    <h5>Debug Menu</h5>
+                </button>-->
+        </article>
         </div>
     </section>
     <footer>
@@ -304,7 +282,7 @@
         <label for="password">Contraseña:</label>
         <input type="password" id="password" name="password" required>
         <br>
-        <button id="LogButtonIn"  type="submit">Iniciar sesión</button>
+        <button id="LogButtonIn" type="submit">Iniciar sesión</button>
     </form>
     <button id="closeLogin">Cerrar</button>
 </dialog>
