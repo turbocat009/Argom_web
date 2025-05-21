@@ -73,6 +73,17 @@
         .Sizes>input:hover {
             opacity: 100%;
         }
+
+        .Sizes>button{
+            width: 360px;
+            border-radius: 8px;
+            color: #33333380;
+        }
+
+                .Sizes>button:active {
+                    color: white;
+                    background-color: var(--color-primary);
+                }
     
         .DesktopOnly {
             display: none;

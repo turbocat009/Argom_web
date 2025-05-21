@@ -87,6 +87,16 @@
     .Sizes>input:hover{
         opacity: 100%;
     }
+
+    .Sizes>button {
+        margin: 0px;
+        width: 24.5rem;
+        background-color: #E6E6E6;
+        opacity: 50%;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        }
     
     .DesktopOnly{
         display: none;

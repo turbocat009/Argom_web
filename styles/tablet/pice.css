@@ -26,8 +26,15 @@
     }
 
     .Sizes{
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-bottom: 50px;
+    }
+
+    .Sizes>button{
+        cursor: pointer;
+        width: 206px;
     }
 
     .Object>form {
@@ -55,7 +62,6 @@
         margin: 0px;
         padding-left: 20px;
         font-size: 16px;
-        margin-bottom: 50px;
     }
 
 
@@ -246,18 +252,16 @@
             width: 100%;
         }
 
-        .Sizes{
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            gap: 10px;
-        }
+                 .Sizes>button {
+                     cursor: pointer;
+                     width: 162px;
+                 }
 
         .Object>form {
             align-items: start;
         }
 
-        .Object>form>button{
+        .Filters>button{
             align-self: start;
             width: 500px;
         }
