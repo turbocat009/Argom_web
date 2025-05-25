@@ -6,7 +6,7 @@
         box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
         padding: 20px;
         margin: auto;
-        max-width: 250px;
+        width: 250px;
     }
     
     dialog::backdrop {
@@ -39,4 +39,136 @@
         height: auto;
         border-radius: 8px;
     }
+
+        .cartDialog {
+            position: fixed;
+            height: 100vh;
+            width: 22rem;
+            z-index: 1000;
+            border-radius: 0px;
+            margin: 0px;
+            left: auto;
+            right: 0px;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            animation: cart 0.3s ease-in-out;
+            z-index: 100;
+            background-color: #FFF;
+        }
+    
+        .cartDialog main {
+            position: absolute;
+            width: 200vh;
+            height: 100vh;
+            z-index: -10;
+            top: 0px;
+            right: 24rem;
+            margin: 0px;
+            padding: 0px;
+        }
+    
+        .cartDialog h1 {
+            background-color: #FFF;
+        }
+    
+        .cartDialog section {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            padding: 0px;
+            height: auto;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            padding: 20px;
+            z-index: 1000;
+            height: 100%;
+            background-color: #FFF;
+        }
+    
+        .cartDialog section div {
+            display: grid;
+            grid-template-columns: 2rem 10rem 15px 50px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 7px;
+            padding: 10px 20px;
+            gap: 10px;
+            border-radius: 16px;
+            width: fit-content;
+            background-color: #FFF;
+        }
+    
+        .cartDialog section div img {
+            width: 2rem;
+        }
+    
+        .cartDialog section div p {
+            text-overflow: ellipsis;
+        }
+    
+        .cartDialog section div button {
+            background-color: #FFF0;
+            padding: 0px;
+        }
+    
+        .cartDialog a {
+            background-color: var(--color-primary);
+            color: white;
+            border-radius: 8px;
+            width: 100%;
+            margin-top: auto;
+            align-self: flex-end;
+            padding: 10px 0px;
+            margin-bottom: 100px;
+            text-decoration: none;
+            text-align: center;
+            margin: 10px 5px 50px 5px;
+        }
+    
+        .cartDialog a:hover {
+            background-color: rgb(188, 112, 40);
+        }
+    
+        #closeCart {
+            position: absolute;
+            border-radius: 50px;
+            padding: 10px;
+            width: 40px;
+            height: 40px;
+            background-color: #FFF;
+            border: #80808088 solid 1px;
+            right: 100px;
+            left: 300px;
+            transition: all 0.1s;
+        }
+    
+        #closeCart:hover {
+            background-color: #cccccca7;
+        }
+    
+        .closingCart {
+            animation: cart-reverse 0.3s ease-in-out;
+        }
+    
+        @keyframes cart-reverse {
+            0% {
+                transform: translate(0, 0);
+            }
+    
+            100% {
+                transform: translate(100%, 0);
+            }
+        }
+    
+        @keyframes cart {
+            0% {
+                transform: translate(100%, 0);
+            }
+    
+            100% {
+                transform: translate(0, 0);
+            }
+    
+        }
 }

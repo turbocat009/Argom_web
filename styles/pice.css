@@ -198,6 +198,10 @@
         opacity: 100%;
     }
 
+    .MobileOnly2 {
+        display: none;
+    }
+
 
 
     /* Hover */

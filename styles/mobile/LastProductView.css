@@ -412,7 +412,10 @@
     /* Responsive */
     @media (max-width: 350px) {
         .Sizes {
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas:
+                    "img input input input"
+                    "btn btn btn btn";
+            justify-content: center;
         }
 
         .Sizes>input {
