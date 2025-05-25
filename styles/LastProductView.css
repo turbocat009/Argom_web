@@ -58,7 +58,7 @@
 
     .Object>form>button {
         border-radius: 8px;
-        color: #33333380;
+        color:rgb(255, 255, 255);
         height: 43px;
         margin: 0px;
         padding: 10px 16px 10px 16px;
@@ -66,6 +66,7 @@
         height: 39px;
         cursor: pointer;
         font-size: 16px;
+        background-color: var(--color-primary);
     }
 
         .Sizes>button:hover {
@@ -410,7 +411,7 @@
     }
 
     .Object>form>button:hover {
-        background-color: #33333333;
+        background-color:rgb(188, 112, 40);
         border: rgba(71, 71, 71, 0.05) solid 1px;
     }
 
@@ -460,7 +461,6 @@
 
         .Buy {
                 grid-template-columns: 30px 140px 130px;
-
             }
 
         .x {
@@ -499,6 +499,8 @@
             width: 100px;
             padding: 8px;
         }
+
+       
 
     }
 

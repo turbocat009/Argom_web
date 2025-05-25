@@ -47,7 +47,10 @@
     
         .Sizes {
             display: grid;
-            grid-template-columns: 20px 1fr 1fr 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas: 
+             "img input input input"
+             "btn btn btn btn";
             justify-content: center;
             align-items: center;
             width: 100%;
@@ -75,10 +78,17 @@
         }
 
         .Sizes>button{
+            grid-area: btn;
             width: 360px;
             border-radius: 8px;
-            color: #33333380;
+            color: white;
+            background-color: var(--color-primary);
         }
+
+                .Sizes>button:hover {
+                    background-color: rgb(188, 112, 40);
+                    border: rgba(71, 71, 71, 0.05) solid 1px;
+                }
 
                 .Sizes>button:active {
                     color: white;

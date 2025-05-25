@@ -42,7 +42,7 @@
         opacity: 50%;
         border: none;
         border-radius: 16px;
-        width: 206px;
+        width: 196px;
         height: 43px;
         padding: 0;
         appearance: textfield;
@@ -52,7 +52,7 @@
     }
 
     .Object>form>button {
-        background-color: #E6E6E6;
+        background-color: var(--color-primary);
         border: none;
         appearance: textfield;
         padding-left: 20px;
@@ -70,7 +70,22 @@
         gap: 10px;
     }
 
-    .Object>form>button {
+     #search{
+            width: 125px;
+            border-radius: 16px;
+            color: white;
+            background-color: var(--color-primary);
+            margin: 0px;
+            padding: 10px 0px;
+            cursor: pointer;
+        }
+
+    #search:hover{
+        color: white;
+        background-color: rgb(188, 112, 40);
+    }
+
+    #btnFilter {
         background-color: #FFF;
         height: 39px;
         border: #80808033 solid 1px;

@@ -59,15 +59,6 @@
     }
 
     
-    .Sizes{
-        display: grid;
-        grid-template-columns: 20px 1fr 1fr 1fr;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        gap: 10px;
-    }
-    
     .Sizes > input::-webkit-outer-spin-button,
     .Sizes>form>input::-webkit-inner-spin-button {
         -webkit-appearance: none;
@@ -88,15 +79,35 @@
         opacity: 100%;
     }
 
-    .Sizes>button {
-        margin: 0px;
-        width: 24.5rem;
-        background-color: #E6E6E6;
-        opacity: 50%;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
+        .Sizes {
+            display: grid;
+            grid-template-rows: auto auto;
+            grid-template-areas:
+                "img input1 input2 input3"
+                "btn btn btn btn";
+            gap: 10px;
         }
+    
+        .Sizes>button {
+            grid-area: btn;
+            cursor: pointer;
+            width: 100%;
+            margin: 10px 0px;
+            background-color: var(--color-primary);
+            color: #F6F6F6;
+            border-radius: 8px;
+        }
+    
+        .Sizes>button:hover {
+            background-color: rgb(188, 112, 40);
+            border: rgba(71, 71, 71, 0.05) solid 1px;
+        }
+
+    .Sizes img {
+        grid-area: img;
+        justify-self: center;
+        padding-top: 10px;
+    }
     
     .DesktopOnly{
         display: none;

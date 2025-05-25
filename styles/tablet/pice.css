@@ -27,14 +27,25 @@
 
     .Sizes{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-        margin-bottom: 50px;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+         "input1 input2 input3"
+         "btn btn btn";
     }
 
-    .Sizes>button{
+    .Sizes>button {
+        grid-area: btn;
         cursor: pointer;
-        width: 206px;
+        width: 100%;
+        margin: 10px 0px;
+        background-color: var(--color-primary);
+        color: #F6F6F6;
+        border-radius: 8px;
+    }
+
+    .Sizes>button:hover {
+        background-color: rgb(188, 112, 40);
+        border: rgba(71, 71, 71, 0.05) solid 1px;
     }
 
     .Object>form {
@@ -73,8 +84,20 @@
         gap: 10px;
     }
 
-    .Object>form>button {
+    #btnFilter {
         background-color: #FFF;
+        height: 39px;
+        border: #80808033 solid 1px;
+        padding: 10px;
+        border-radius: 16px;
+        color: var(--color-text);
+        margin: 0px;
+        align-self: center;
+        cursor: pointer;
+    }
+
+    #btnFilter:hover {
+        background-color:rgb(241, 240, 240);
         height: 39px;
         border: #80808033 solid 1px;
         padding: 10px;
@@ -209,7 +232,7 @@
         opacity: 100%;
     }
 
-    .Object>form>button:hover {
+    #btnFilter:hover {
         background-color: var(--color-black);
         border: rgba(71, 71, 71, 0.05) solid 1px;
     }
@@ -252,10 +275,19 @@
             width: 100%;
         }
 
-                 .Sizes>button {
-                     cursor: pointer;
-                     width: 162px;
-                 }
+        .Sizes{
+            display: grid;
+            grid-template-rows: auto auto;
+            grid-template-areas: 
+             "input1 input2 input3"
+             "btn btn btn";
+        }
+
+        .Sizes>button {
+            grid-area: btn;
+            cursor: pointer;
+            width: 100%;
+       }
 
         .Object>form {
             align-items: start;
