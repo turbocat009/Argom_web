@@ -7,6 +7,7 @@
     <script src="/src/scripts/testFetures.js"></script>
     <script src="/src/scripts/responsive.js"></script>
     <script src="/src/scripts/changePage.js"></script>
+        <script src="/src/scripts/cart.js"></script>
     <link rel="shortcut icon" href="/src/pictures/favicon.webp" type="image/x-icon">
     <link rel="stylesheet" href="/styles/global.css">
     <link rel="stylesheet" href="/styles/404.css">
@@ -41,7 +42,7 @@
                 <li><a href="/">INICIO</a></li>
                 <li><a href="/search">BUSCAR</a></li>
                 <li><a href="/historic">HISTÓRICO</a></li>
-                <li><a href="/cart">CARRITO (1) </a></li>
+                <li><a id="openCart">CARRITO (1) </a></li>
                 <li><button id="logout">SALIR</button></li>
             </div>
             <button class="" id="login"> ÁREA PRIVADA
@@ -242,4 +243,26 @@
         <button id="LogButtonIn" type="submit">Iniciar sesión</button>
     </form>
     <button id="closeLogin">Cerrar</button>
+</dialog>
+
+<dialog class="cartDialog none">
+    <button id="closeCart">X</button>
+    <h1>Carrito</h1>
+    <form>
+        <div>
+            <img src="/src/pictures/pices/RCM.svg" alt="Imagen del producto X">
+            <p>Rascador-de-50mm</p>
+            <p>x7</p>
+            <button><img src="/src/pictures/trash.svg" alt="Icono para eliminar"></button>
+        </div>
+        <div>
+            <img src="/src/pictures/pices/RG.svg" alt="Imagen del producto X">
+            <p>Rascador-de-75mm</p>
+            <p>x15</p>
+            <button><img src="/src/pictures/trash.svg" alt="Icono para eliminar"></button>
+        </div>
+    </form>
+    <a href="/content/cart/index.html">Ir al Carrito</a>
+    <main id="closeCartXD">
+    </main>
 </dialog>
