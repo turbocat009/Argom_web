@@ -207,7 +207,7 @@
         opacity: 100%;
     }
 
-    .Object>form>button:hover {
+    #btnFilter:hover {
         background-color: var(--color-black); 
         border:rgba(71, 71, 71, 0.05) solid 1px;
     }
