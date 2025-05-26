@@ -76,6 +76,17 @@
             border: none;
             border-radius: 8px;
         }
+
+                .Sizes>select {
+                    margin: 0px;
+                    width: 15vh;
+                    height: 35px;
+                    appearance: textfield;
+                    background-color: #E6E6E6;
+                    opacity: 50%;
+                    border: none;
+                    border-radius: 8px;
+                }
     
         .Sizes>input:hover {
             opacity: 100%;

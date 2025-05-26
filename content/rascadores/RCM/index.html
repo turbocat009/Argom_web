@@ -35,7 +35,7 @@
                 src="/src/pictures/logo.avif" alt="Logo de Argom Seals S.L."></a>
         <ul class="headerlinks">
             <div class="ContextMenu MobileOnly none" id="LogedInMenuMobile">
-                <button class="CartButton"><img src="/src/pictures/cart.svg" alt=""></button>
+                <button class="CartButton" id="openCart"><img src="/src/pictures/cart.svg" alt=""></button>
                 <button class="MenuButton" id="Menu"><img src="/src/pictures/menu.svg" alt=""></button>
                 <button class="none" id="MenuC"><img src="/src/pictures/close.svg" alt=""></button>
             </div>
@@ -44,7 +44,7 @@
                 <li><a href="/">INICIO</a></li>
                 <li><a href="/search">BUSCAR</a></li>
                 <li><a href="/historic">HISTÓRICO</a></li>
-                <li><a id="openCart">CARRITO (1) </a></li>
+                <li><a class="cartBtn" id="openCart">CARRITO (1) </a></li>
                 <li><button id="logout">SALIR</button></li>
             </div>
             <button class="" id="login"> ÁREA PRIVADA
@@ -92,7 +92,14 @@
                 <img src="/src/pictures/SEARCH.svg" alt="Search" class="MobileOnly">
                 <input type="number" name="Interior" placeholder="Interior" min="0">
                 <input type="number" name="Exterior" placeholder="Exterior" min="0">
-                <input type="number" name="Altura" placeholder="Altura" min="0">
+                <select name="Altura" id="">
+                    <option value="0">Altura</option>
+                    <option value="3.00">3.00</option>
+                    <option value="4.50">4.50</option>
+                    <option value="6.00">6.00</option>
+                    <option value="7.50">7.50</option>
+                    <option value="9.00">9.00</option>
+                </select>
                 <button type="submit">Buscar</button>
 
             </form>
@@ -139,6 +146,8 @@
                         </div>
                     </section>
                 </article>
+
+                
                 
                 <button id="DebugButton">
                     <img class="productIMG" src="/src/favicon.svg" alt="Foto de Mecanizaciones Especiales">

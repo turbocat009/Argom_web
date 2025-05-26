@@ -70,6 +70,10 @@
         border: #1F459280 1px solid;
     }
 
+    .cartBtn{
+        display: none;
+    }
+
     .MenuButton{
         width: 64px;
         height: 32px;
